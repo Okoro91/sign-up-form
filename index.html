@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,138 @@
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
 </head>
+
 <body>
-    
+
+    <div class="container">
+        <!-- Left Side - About Helpers Hub -->
+        <div class="content">
+            <h1>Welcome to Helpers Hub!</h1>
+            <h2>Join Us in Building a Better Community Together!</h2>
+            <p>
+                At Helpers Hub, we believe in the power of collective action to bring about positive change. Join our
+                community of passionate individuals committed to making a real difference in the lives of those around
+                us. By signing up, you become an integral part of a movement dedicated to community development and
+                creating a brighter future for all.
+            </p>
+            <h3>Why Join Helpers Hub?</h3>
+            <ul>
+                <li><strong>Make a Meaningful Impact:</strong> Your time and skills can contribute to projects that
+                    directly benefit the community.</li>
+                <li><strong>Connect with Like-Minded Individuals:</strong> Join a diverse and supportive community of
+                    volunteers.</li>
+                <li><strong>Personal Growth and Development:</strong> Gain valuable experience and learn new skills.
+                </li>
+            </ul>
+
+            <h3>A Note from Helpers Hub:</h3>
+            <p><em>Dear Future Helper,</em></p>
+            <p>Thank you for considering joining Helpers Hub! Our passion for community development drives us to create
+                a positive impact, one project at a time.</p>
+            <p>At Helpers Hub, we believe that every individual has something valuable to contribute. Your commitment
+                and dedication inspire us, and we are excited to welcome you to the Helpers Hub family.</p>
+            <p><em>With gratitude,</em><br><strong>The Helpers Hub Team</strong></p>
+        </div>
+
+        <!-- Right Side - Sign Up Form -->
+        <div class="form-container">
+            <form id="signup-form">
+                <h2>Sign Up</h2>
+
+                <div class="input-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" required>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" required>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <div class="error-message"></div>
+                </div>
+
+                <div class="input-group">
+                    <label for="confirm">Confirm Password</label>
+                    <input type="password" id="confirm" name="confirm" required>
+                    <div class="error-message"></div>
+                </div>
+
+                <button type="submit">Sign Up</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </form>
+        </div>
+    </div>
+
+    <form id="signup-form">
+        <div class="data-container">
+            <label for="fname"><i class="far fa-user"></i></label>
+            <input type="text" id="fname" name="first-name">
+            <span class="label-text">First Name</span>
+            <div class="error-message"></div>
+        </div>
+
+        <div class="data-container">
+            <label for="lname"><i class="far fa-user"></i></label>
+            <input type="text" id="lname" name="last-name">
+            <span class="label-text">Last Name</span>
+            <div class="error-message"></div>
+        </div>
+
+        <div class="data-container">
+            <label for="email"><i class="far fa-at"></i></label>
+            <input type="email" id="email" name="email">
+            <span class="label-text">Email</span>
+            <div class="error-message"></div>
+        </div>
+
+        <div class="data-container">
+            <label for="phone"><i class="fas fa-mobile-alt"></i></label>
+            <input type="tel" id="phone" name="phone">
+            <span class="label-text">Mobile</span>
+            <div class="error-message"></div>
+        </div>
+
+        <div class="data-container">
+            <label for="password"><img src="images/lock.svg" alt=""></label>
+            <input type="password" id="password" name="password">
+            <span class="label-text">Password</span>
+            <div class="error-message"></div>
+        </div>
+
+        <div class="data-container">
+            <label for="confirm"><img src="images/lock.svg" alt=""></label>
+            <input type="password" id="confirm" name="confirm">
+            <span class="label-text">Confirm Password</span>
+            <div class="error-message"></div>
+        </div>
+
+        <div class="btn-data">
+            <button type="submit" id="btn">Create Account</button>
+            <p>Already have an account? <span class="log-text">LOG IN</span></p>
+        </div>
+    </form>
+
+
+
+    <script src="script.js"></script>
 </body>
+
 </html>
