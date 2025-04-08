@@ -1,0 +1,170 @@
+body {
+    font-family: 'Poppins-Regular', sans-serif;
+    background-color: #ffc488;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Content Section */
+.content {
+    flex: 1;
+    padding: 40px;
+    background-color: #f4a261;
+    color: white;
+}
+
+.content h1,
+.content h2,
+.content h3 {
+    margin-bottom: 10px;
+}
+
+.content ul {
+    padding-left: 20px;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+/* Form Section */
+.form-container {
+    flex: 1;
+    padding: 40px;
+    background: white;
+}
+
+/* Form Styles */
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #472605;
+    padding: 8px 10px;
+    font-size: 1.2em;
+    transition: all 0.5s ease-in;
+}
+
+button {
+    width: 100%;
+    background-color: #f4a261;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e76f51;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .content,
+    .form-container {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+
+fff .data-container {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+
+
+input:focus {
+    border: 1px solid #ff5722;
+    outline: none;
+    border-radius: 5px;
+}
+
+input:valid {
+    border: 1px solid green;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    display: none;
+}
+
+.btn-data {
+    text-align: center;
+}
+
+button {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
