@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="app.js" defer></script>
 </head>
 
@@ -43,53 +46,58 @@
             </div>
 
             <div class="form-container">
+                <h3>Sign Up</h3>
                 <form id="signup-form">
-                    <h3>Sign Up</h3>
-
-                    <div class="input-group">
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="fname" required>
+                    <div class="data-container">
+                        <label for="fname"><i class="far fa-user"></i></label>
+                        <input type="text" id="fname" name="first-name">
+                        <span class="label-text">First Name</span>
                         <div class="error-message"></div>
                     </div>
 
-                    <div class="input-group">
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lname" required>
+                    <div class="data-container">
+                        <label for="lname"><i class="far fa-user"></i></label>
+                        <input type="text" id="lname" name="last-name">
+                        <span class="label-text">Last Name</span>
                         <div class="error-message"></div>
                     </div>
 
-                    <div class="input-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                    <div class="data-container">
+                        <label for="email"><i class="far fa-at"></i></label>
+                        <input type="email" id="email" name="email">
+                        <span class="label-text">Email</span>
                         <div class="error-message"></div>
                     </div>
 
-                    <div class="input-group">
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone" required>
+                    <div class="data-container">
+                        <label for="phone"><i class="fas fa-mobile-alt"></i></label>
+                        <input type="tel" id="phone" name="phone">
+                        <span class="label-text">Mobile</span>
                         <div class="error-message"></div>
                     </div>
 
-                    <div class="input-group">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" required>
+                    <div class="data-container">
+                        <label for="password"><i class="fa-solid fa-lock"></i></label>
+                        <input type="password" id="password" name="password">
+                        <span class="label-text">Password</span>
                         <div class="error-message"></div>
                     </div>
 
-                    <div class="input-group">
-                        <label for="confirm">Confirm Password</label>
-                        <input type="password" id="confirm" name="confirm" required>
+                    <div class="data-container">
+                        <label for="confirm"><i class="fa-solid fa-lock"></i></label>
+                        <input type="password" id="confirm" name="confirm">
+                        <span class="label-text">Confirm Password</span>
                         <div class="error-message"></div>
                     </div>
 
                     <button type="submit">Sign Up</button>
-                    <p>Already have an account? <a href="#">Log in</a></p>
+                    <p class="login">Already have an account? <a href="#">Log in</a></p>
                 </form>
             </div>
         </div>
     </div>
 
-
+    <a href="form.html" target="_blank" rel="noopener noreferrer">nextpage</a>
 </body>
 
 </html>

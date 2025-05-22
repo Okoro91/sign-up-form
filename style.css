@@ -1,6 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins-Regular', sans-serif;
-    background-color: #ffc488;
+    background-color: #f4a261;
     margin: 0;
     padding: 0;
 }
@@ -10,22 +16,26 @@ img {
     height: 100%;
 }
 
+
 .container {
     display: flex;
-    width: 100%;
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
     overflow: hidden;
 }
 
 .banner {
-    width: 550px;
-    height: 100vh;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .logo {
     position: absolute;
     left: 0;
     top: 25%;
-    width: 550px;
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,12 +48,11 @@ img {
 }
 
 .content {
-    padding: 40px 80px;
-    background-color: #f4a261;
+    padding: 20px 40px 10px;
     color: white;
     text-align: center;
-    flex: 1 0;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -58,57 +67,92 @@ img {
     margin-bottom: 10px;
 }
 
+h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-weight: 900;
+
+}
 
 h2 {
     font-size: 18px;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
 }
 
 p {
     font-size: 14px;
     font-style: italic;
+    margin-bottom: 20px;
 }
 
 
 .form-container {
     padding: 40px;
     background: white;
-    width: 250px;
+    width: 650px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #e76f51;
+    margin-bottom: 20px;
+
 }
 
 form {
+    display: flex;
+    flex-flow: row wrap;
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* width: 350px; */
 }
 
-.input-group {
+.data-container {
     margin-bottom: 15px;
+    padding: 0 10px;
+    width: 250px;
 }
 
-label {
+label,
+.label-text {
     display: block;
-    font-weight: bold;
+    font-size: 12px;
+    font-weight: 600;
+    color: #472605;
+    text-align: left;
+    margin-bottom: 5px;
 }
 
-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
 
 input {
     display: block;
     width: 100%;
     border: none;
+    outline: none;
     border-bottom: 1px solid #472605;
-    padding: 8px 10px;
     font-size: 1.2em;
     transition: all 0.5s ease-in;
+    margin-bottom: 5px;
+}
+
+input:focus {
+    border: 1px solid #ff5722;
+    outline: none;
+    border-radius: 5px;
+}
+
+/* input:valid {
+    border: 1px solid green;
+} */
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    display: none;
 }
 
 button {
@@ -127,62 +171,8 @@ button:hover {
     background-color: #e76f51;
 }
 
-p {
-    text-align: center;
-    margin-top: 10px;
-}
-
-/* 
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .content,
-    .form-container {
-        width: 100%;
-        padding: 20px;
-    }
-}
-
-
-fff .data-container {
-    margin-bottom: 15px;
-    position: relative;
-}
-
-
-
-input:focus {
-    border: 1px solid #ff5722;
-    outline: none;
-    border-radius: 5px;
-}
-
-input:valid {
-    border: 1px solid green;
-}
-
-.error-message {
-    color: red;
-    font-size: 0.8em;
-    display: none;
-}
-
-.btn-data {
-    text-align: center;
-}
-
-button {
-    background-color: #ff5722;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+.login {
     width: 100%;
-    border-radius: 5px;
+    margin-top: 10px;
+    color: #472605;
 }
-
-button:hover {
-    background-color: #e64a19;
-} */
