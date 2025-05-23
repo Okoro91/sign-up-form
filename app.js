@@ -1,10 +1,11 @@
+const form = document.querySelector('#signup-form');
+const inputs = document.querySelectorAll('input');
+const passwordInput = document.querySelector('#password');
+const confirmInput = document.querySelector('#confirm');
+
+
+
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.querySelector('#signup-form');
-    const inputs = document.querySelectorAll('input');
-    const passwordInput = document.querySelector('#password');
-    const confirmInput = document.querySelector('#confirm');
-
-
 
     function validateInput(input) {
         const errorMessage = input.nextElementSibling;
@@ -46,8 +47,10 @@ form.addEventListener('submit', (e) => {
         if (!validatePasswordMatch()) {
             hasErrors = true;
         }
-        if (!hasErrors && isFormValid()) {
+        if (!hasErrors) {
             form.submit();
         }
+        
+        
     });
 })
